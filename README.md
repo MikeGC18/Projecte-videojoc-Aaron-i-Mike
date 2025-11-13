@@ -27,22 +27,27 @@ L’estètica del joc tindrà un **to retro** amb **colors vius i animacions sen
 ---
 
 ### Paleta de colors
-### Paleta de colors
-Per al nostre videojoc **Puff Diddy**, hem triat una paleta de colors inspirada en l’estètica dels **jocs arcade retro**, combinant tons vius amb contrastos marcats per donar una sensació de moviment i acció constant.
+Per al videojoc **Puff Diddy**, hem triat una paleta de colors inspirada en l’estil **retro arcade**, combinant colors vius i contrastats per mantenir l’acció i la claredat visual durant tota la partida.
 
-El **fons del joc** serà un **fons animat en format GIF**, que simularà moviment continu per crear dinamisme visual durant tota la partida. Aquest efecte ajudarà a transmetre la sensació que el personatge i els enemics es mouen dins d’un entorn viu i en constant acció.
+- **Fons del joc principal:** S’utilitzarà un **GIF animat**, simulant moviment constant per donar dinamisme i sensació d’acció contínua.
 
-Les **lletres de la puntuació requerida i del temps** utilitzaran **color blanc amb un contorn negre**, per aconseguir un estil **retro i llegible** fins i tot sobre fons foscos o animats.  
-Aquesta combinació de blanc i negre ressalta molt bé en pantalles amb moviment i reforça l’estètica clàssica del videojoc.
+- **Elements principals (Puff Diddy i enemics):** Colors vius i contrastats per destacar-los sobre el fons i facilitar la seva identificació ràpida pel jugador.
 
-A la **pantalla d’inici**, s’utilitzarà una **imatge de fons anomenada “Call of Diddy”**, on apareix **Puff Diddy** de fons. Aquesta imatge es convertirà a **estil píxel (pixel art)** per mantenir la coherència visual amb la resta del joc i donar-li un toc nostàlgic.  
-El text de **“Start”** també serà de **color blanc amb bordat negre**, mantenint el mateix estil que les altres parts de la interfície per crear una identitat visual consistent.
+- **Textos de puntuació i temps:** Blanc amb contorn negre, estil retro, que assegura una bona llegibilitat sobre fons animats o foscos.
 
-En resum, la nostra paleta de colors es basa en:
-- 🎨 **Fons:** tons foscos i animats (GIF) per donar moviment i profunditat.  
-- 💥 **Elements principals (Puff Diddy i enemics):** colors vius i contrastats.  
-- 🕹️ **Textos i puntuacions:** blanc amb contorn negre per reforçar l’estil retro i la llegibilitat.  
-- 🌌 **Pantalla d’inici:** imatge pixelada amb tonalitats vibrants i ambient retro.
+- **Pantalla d’inici:** S’utilitzarà una imatge de fons amb el títol **“Call of Diddy”** i Puff Diddy al centre, convertida a **pixel art** per mantenir coherència retro.  
+  El text de **“Start”** serà blanc amb contorn negre.
+
+- **Pantalla “Has perdut”:**  
+  - **Fons:** Blanc transparent, simulant que la “sang” de Puff Diddy és blanca.  
+  - **Text:** Blanc amb contorn negre, per mantenir llegibilitat i estil retro.
+
+- **Pantalla “Has guanyat”:**  
+  - **Fons:** Blau fosc/morat, destacant la victòria i creant contrast amb el personatge.  
+  - **Text:** Blanc amb contorn negre, consistent amb la resta de la interfície.
+
+**Pantalla d'inici:** 
+[![Muestra](Imagenes/)
 
 
 
