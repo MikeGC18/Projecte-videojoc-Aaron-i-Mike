@@ -46,11 +46,13 @@ Per al videojoc **Puff Diddy**, hem triat una paleta de colors inspirada en l’
   - **Fons:** Blau fosc/morat, destacant la victòria i creant contrast amb el personatge.  
   - **Text:** Blanc amb contorn negre, consistent amb la resta de la interfície.
 
-**Pantalla d'inici:** .
+**Fons pantalla d'inici:** .
 
 [![Muestra](Imagenes/Pantallainicio.png)
 
+**Fons pantalla del joc:** .
 
+[![Muestra](Imagenes/)
 
 ---
 
