@@ -47,7 +47,7 @@ Per al videojoc **Puff Diddy**, hem triat una paleta de colors inspirada en l’
   - **Text:** Blanc amb contorn negre, consistent amb la resta de la interfície.
 
 **Pantalla d'inici:** 
-[![Muestra](Imagenes/)
+[![Muestra](Imagenes/Pantallainicio.png)
 
 
 
