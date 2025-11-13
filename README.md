@@ -22,6 +22,7 @@ Aquest tipus de joc combina **habilitat, rapidesa i precisió**, fomentant la re
 
 L’estètica del joc tindrà un **to retro** amb **colors vius i animacions senzilles**, recordant els jocs arcade dels anys 80 i 90, però amb una presentació més moderna i adaptada als navegadors actuals.
 
+[Juego naves de inspiración](https://www.istockphoto.com/es/vector/pantalla-de-juego-de-arcade-retro-con-pixel-invasores-y-nave-espacial-gr%C3%A1ficos-del-gm935726114-256017503)
 
 ---
 
