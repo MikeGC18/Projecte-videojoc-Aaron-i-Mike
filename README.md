@@ -51,6 +51,7 @@ Per al videojoc **Puff Diddy**, hem triat una paleta de colors inspirada en l’
 [![Muestra](Imagenes/Pantallainicio.png)
 
 **Fons pantalla del joc:** 
+
 [![Muestra](Imagenes/Imagenfondo.png)
 
 ---
