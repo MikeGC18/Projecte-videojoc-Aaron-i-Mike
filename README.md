@@ -38,6 +38,12 @@ Per al videojoc **Puff Diddy**, hem triat una paleta de colors inspirada en l’
 - **Pantalla d’inici:** S’utilitzarà una imatge de fons amb el títol **“Call of Diddy”** i Puff Diddy al centre, convertida a **pixel art** per mantenir coherència retro.  
   El text de **“Start”** serà blanc amb contorn negre.
 
+- **Menú d’instruccions (abans d’iniciar el joc):**  
+  - **Fons:** Negre (#000000), per destacar els elements visuals i mantenir l’estil arcade.  
+  - **Títol:** Groc neó (#FFFF00), per captar l’atenció del jugador.  
+  - **Text:** Morat (#800080) amb contorn més fosc (#4B0082), per assegurar llegibilitat i estil retro.  
+  - **Transicions:** Quan el jugador prem **Start**, es mostrarà aquest menú durant uns segons abans de carregar el joc principal, amb una transició suau.
+
 - **Pantalla “Has perdut”:**  
   - **Fons:** Blanc transparent, simulant que la “sang” de Puff Diddy és blanca.  
   - **Text:** Blanc amb contorn negre, per mantenir llegibilitat i estil retro.
