@@ -45,7 +45,7 @@ Per al videojoc **Puff Diddy**, hem triat una paleta de colors inspirada en l’
   - **Transicions:** Quan el jugador prem **Start**, es mostrarà aquest menú durant uns segons abans de carregar el joc principal, amb una transició suau.
 
 - **Pantalla “Has perdut”:**  
-  - **Fons:** Blanc transparent, simulant que la “sang” de Puff Diddy és blanca.  
+  - **Fons:** Transparent, amb gotes simulant que la “sang” de Puff Diddy és blanca.  
   - **Text:** Blanc amb contorn negre, per mantenir llegibilitat i estil retro.
 
 - **Pantalla “Has guanyat”:**  
