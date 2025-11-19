@@ -72,7 +72,7 @@ Per al videojoc **Puff Diddy**, hem triat una paleta de colors inspirada en l’
 
 ### Tipografia
 
-[![Muestra](Imagenes/Captura de pantalla 2025-11-19 165859.png)
+[![Muestra](Imagenes/tipografia.png)
 
 
 ---
