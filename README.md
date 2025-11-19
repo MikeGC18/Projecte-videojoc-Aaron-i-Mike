@@ -71,7 +71,9 @@ Per al videojoc **Puff Diddy**, hem triat una paleta de colors inspirada en l’
 ---
 
 ### Tipografia
+En l’apartat de la tipografia hem escollit el tipus de lletra Press Start 2P, una font inspirada en els textos dels videojocs clàssics de les consoles de 8 bits. Aquesta tipografia ens ajuda a transmetre una estètica retro molt marcada, reforçant la temàtica del projecte i transportant l’usuari a l’estil visual dels primers jocs arcade.
 
+A més, el seu disseny pixelat i geomètric encaixa perfectament amb la identitat visual del nostre videojoc, aportant coherència gràfica i reforçant la sensació nostàlgica que volem transmetre. També és una font molt reconeguda dins de l’àmbit gamer, cosa que ens permet aconseguir una connexió immediata amb el públic objectiu.
 [![Muestra](Imagenes/tipografia.png)
 
 
