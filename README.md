@@ -8,6 +8,7 @@ Per això, primer de tot, entre els membres del grup escollim les diferents cara
 - [Tipografia](#tipografia)
 - [Wireframe](#wireframe)
 - [Sprites](#Sprites)
+- [Diagrama de flux](#Diagrama-de-flux)
 
 ---
 
