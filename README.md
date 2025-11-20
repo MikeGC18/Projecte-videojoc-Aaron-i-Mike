@@ -210,6 +210,11 @@ En aquest apartat hem afegit els **sprites corresponents al nostre joc Puff Didd
 
 [![Muestra](Imagenes/Explosion.png)
 
+**Sprite projectil enemic**
+
+[![Muestra](Proyectil.png)
+
+
 
 
 ### Diagrama de flux
