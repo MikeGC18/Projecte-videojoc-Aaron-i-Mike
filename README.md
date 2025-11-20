@@ -203,6 +203,7 @@ En aquest apartat hem afegit els **sprites corresponents al nostre joc Puff Didd
 
 
 **Sprite projectil**
+
 [![Muestra](descarga.png)
 
 
