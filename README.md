@@ -76,10 +76,20 @@ Enemics: 0 0 0 X 0 X 0 X 0 0
 - Els projectils es dibuixen separats del jugador, mostrant visualment que dispara.
 
   **Visual simplificat del disparo recte:**
+
+  
 Jugador: P
+
+
    Bala: |
+
+   
 Enemics: X X X
+
+
    Fila: 1 2 3 4 5
+
+   
 ---
 
 ### Estratègia i dificultat
