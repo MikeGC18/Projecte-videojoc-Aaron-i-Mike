@@ -41,7 +41,8 @@ Exemple de oleades equilibrades:
 
 Els espais permeten al jugador **moure's i esquivar els atacs**, afegint estratègia al joc.
 X = enemic
-12345678910 = 000X0X0X000
+Posició: 1 2 3 4 5 6 7 8 9 10
+Enemics: 0 0 0 X 0 X 0 X 0 0
 
 ---
 
@@ -60,13 +61,18 @@ X = enemic
 ### Moviment i disparo del jugador
 - El jugador **es mourà amb les tecles de fletxa esquerra i dreta**.  
 - Es podrà **disparar amb el clic del ratolí** mentre es mou, sense restriccions.  
-- Això permet **esquivar mentre ataca**, fent el joc més dinàmic i estratègic.  
+- Cada **click genera una bala que es mou recta cap amunt** des de la posició X del jugador.  
 - **Sprite del jugador:**  
   - Només cal **una imatge**.  
   - Es pot invertir horitzontalment segons la direcció (esquerra/dreta).  
   - No cal sprite diferent per disparar o estar quiet.  
 - Els projectils es dibuixen separats del jugador, mostrant visualment que dispara.
 
+  **Visual simplificat del disparo recte:**
+Jugador: P
+   Bala: |
+Enemics: X X X
+   Fila: 1 2 3 4 5
 ---
 
 ### Estratègia i dificultat
