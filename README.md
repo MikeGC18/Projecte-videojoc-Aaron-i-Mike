@@ -11,7 +11,7 @@ Per això, primer de tot, entre els membres del grup escollim les diferents cara
 ---
 
 ### Tipologia
-En aquest apartat expliquem la **tipologia** del nostre videojoc, anomenat **Puff Diddy**, un projecte desenvolupat amb **JavaScript**, **HTML5** i **CSS3**.
+En aquest apartat expliquem la **tipologia** del nostre videojoc, anomenat **Call of Diddy**, un projecte desenvolupat amb **JavaScript**, **HTML5** i **CSS3**.
 
 El nostre videojoc està inspirat en el clàssic joc d’**arcade de naus espacials**, però amb un toc original i modern. En lloc de controlar una nau, el jugador controla a **Puff Diddy**, un personatge carismàtic que es pot desplaçar lateralment per la pantalla utilitzant les **tecles del teclat**. L’objectiu és **eliminar tants enemics com sigui possible dins d’un temps limitat**.
 
@@ -48,8 +48,8 @@ Enemics: 0 0 0 X 0 X 0 X 0 0
 
 ### Sistema de puntuació
 - **Puntuació inicial del jugador:** 0  
-- **Temps total de partida:** 60 segons  
-- **Puntuació mínima requerida per guanyar:** 120 punts  
+- **Temps total de partida:** exemple: 60 segons  
+- **Puntuació mínima requerida per guanyar:** exemple: 120 punts  
 
 **Mecànica:**  
 - **Matar enemics:** el jugador suma punts segons el tipus d’enemic.  
