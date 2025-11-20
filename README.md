@@ -7,6 +7,7 @@ Per això, primer de tot, entre els membres del grup escollim les diferents cara
 - [Paleta de colors](#paleta-de-colors)
 - [Tipografia](#tipografia)
 - [Wireframe](#wireframe)
+- [Sprites](#Sprites)
 
 ---
 
@@ -179,6 +180,10 @@ En aquest apartat mostrem l’estructura i el disseny del videojoc.
 
 **Wireframe pantalla "Victoria"**
 [![Muestra](Imagenes/Wireframevictoria.png)
+
+---
+
+### Sprites
 
 
 
