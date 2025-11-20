@@ -4,8 +4,8 @@ Per això, primer de tot, entre els membres del grup escollim les diferents cara
 
 ### Menú
 - [Tipologia](#tipologia)
-- [Tipografia](#tipografia)
 - [Paleta de colors](#paleta-de-colors)
+- [Tipografia](#tipografia)
 - [Wireframe](#wireframe)
 
 ---
@@ -133,7 +133,7 @@ Per al videojoc **Puff Diddy**, hem triat una paleta de colors inspirada en l’
   - **Text:** Blanc amb contorn negre, consistent amb la resta de la interfície.
 
 **Paleta de colors:**
-![Paleta](Imagenes/Paletapng)
+![Paleta](Imagenes/Paleta.png)
 
 **Imatge d'exemple de menú:**
 
