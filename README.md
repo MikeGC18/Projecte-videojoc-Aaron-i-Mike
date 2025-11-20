@@ -81,7 +81,7 @@ Enemics: 0 0 0 X 0 X 0 X 0 0
 Jugador: P
 
 
-    Bala: |
+  Bala: |
 
    
 Enemics: X X X
