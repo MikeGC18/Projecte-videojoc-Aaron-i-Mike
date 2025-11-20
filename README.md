@@ -188,10 +188,3 @@ En aquest apartat mostrem l’estructura i el disseny del videojoc.
 
 
 
-
-
-
-
-### Wireframe
-
-
