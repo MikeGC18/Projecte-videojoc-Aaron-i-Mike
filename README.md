@@ -40,10 +40,16 @@ Exemple de oleades equilibrades:
 **Visual simplificat d’una fila de 10 posicions:**
 
 Els espais permeten al jugador **moure's i esquivar els atacs**, afegint estratègia al joc.
+
+
 X = enemic
+
+
 Posició: 1 2 3 4 5 6 7 8 9 10  
 
+
 Enemics: 0 0 0 X 0 X 0 X 0 0  
+
 
 ---
 
