@@ -212,7 +212,7 @@ En aquest apartat hem afegit els **sprites corresponents al nostre joc Puff Didd
 
 **Sprite projectil enemic**
 
-![Muestra](Proyectil.png)
+![Muestra](Imagenes/Proyectil.png)
 
 
 
