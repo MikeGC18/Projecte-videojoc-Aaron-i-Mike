@@ -121,7 +121,7 @@ Per al videojoc **Puff Diddy**, hem triat una paleta de colors inspirada en l’
 - **Menú d’instruccions (abans d’iniciar el joc):**  
   - **Fons:** Negre (#000000), per destacar els elements visuals i mantenir l’estil arcade.  
   - **Títol:** Groc neó (#CCFF00), per captar l’atenció del jugador.  
-  - **Text:** Morat (#800080) amb contorn més fosc (#4B0082), per assegurar llegibilitat i estil retro.  
+  - **Text:** Morat (#BC13FE) amb contorn més fosc (#432678), per assegurar llegibilitat i estil retro.  
   - **Transicions:** Quan el jugador prem **Start**, es mostrarà aquest menú durant uns segons abans de carregar el joc principal, amb una transició suau.
 
 - **Pantalla “Has perdut”:**  
