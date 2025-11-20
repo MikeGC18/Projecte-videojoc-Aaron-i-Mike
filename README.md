@@ -221,7 +221,7 @@ En aquest apartat hem afegit els **sprites corresponents al nostre joc Puff Didd
 
 En aquest apartat es mostra el diagrama de flux del funcionament del nostre joc. 
 
-![Muestra](Imagenes/DiagramaJuego.drawio)
+![Muestra](Imagenes/DiagramaJuego.drawio.png)
 
 
 
