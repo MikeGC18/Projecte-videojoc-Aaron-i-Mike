@@ -208,7 +208,7 @@ En aquest apartat hem afegit els **sprites corresponents al nostre joc Puff Didd
 
 **Sprite efecte explosió mort enemic**
 
-[![Muestra](Imagenes/explosion-01.png)
+[![Muestra](Imagenes/Explosion.png)
 
 
 
