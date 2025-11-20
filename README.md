@@ -184,6 +184,29 @@ En aquest apartat mostrem l’estructura i el disseny del videojoc.
 ---
 
 ### Sprites
+En aquest apartat hem afegit els **sprites corresponents al nostre joc Puff Diddy**. Aquests sprites representen visualment el jugador, els enemics i els projectils, permetent que el joc sigui clar, comprensible i estèticament coherent.
+
+**Sprite Jugador**
+[![Muestra](Imagenes/Spritejugador.png)
+
+**Sprite enemics**
+[![Muestra](Imagenes/Enemigobase.png)
+
+[![Muestra](Imagenes/enemigomedio.png)
+
+[![Muestra](Imagenes/enemigodificil.png)
+
+
+
+**Sprite projectil**
+[![Muestra](descarga.png)
+
+
+
+
+
+### Diagfram
+
 
 
 
