@@ -100,6 +100,7 @@ Enemics: X X X
 - La combinació de temps de partida, oleades amb espais i puntuació mínima fa que el joc sigui **divertit, equilibrat i estratègic**.
 
 ---
+**Exemple d'imatge del joc inspirat**
 
 [![Muestra](Imagenes/istockphoto-935726114-612x612.jpg)
 
