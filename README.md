@@ -146,7 +146,7 @@ Per al videojoc **Puff Diddy**, hem triat una paleta de colors inspirada en l’
 
 **Fons pantalla del joc:** 
 
-[![Muestra](Imagenes/Imagenfondo.png)
+[![Muestra](Imagenes/Fondo.png)
 
 ---
 
@@ -161,6 +161,25 @@ A més, el seu disseny pixelat i geomètric encaixa perfectament amb la identita
 
 ### Wireframe
 En aquest apartat mostrem l’estructura i el disseny del videojoc.
+**Wireframe Pantalla inicial**
+[![Muestra](Imagenes/Wireframeinicial.png)
+
+
+**Wireframe menú d'instruccions**
+[![Muestra](Imagenes/MenuInstruccion.png)
+
+
+**Wireframe joc**
+[![Muestra](Imagenes/wireframejuego.png)
+
+
+**Wireframe pantalla "Has perdut"**
+[![Muestra](Imagenes/fondoperdido.png)
+
+
+**Wireframe pantalla "Victoria"**
+[![Muestra](Imagenes/Wireframevictoria.png)
+
 
 
 
