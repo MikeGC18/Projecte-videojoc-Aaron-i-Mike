@@ -103,7 +103,7 @@ Enemics: X X X
 ---
 **Exemple d'imatge del joc inspirat**
 
-[![Muestra](Imagenes/istockphoto-935726114-612x612.jpg)
+![Muestra](Imagenes/istockphoto-935726114-612x612.jpg)
 
 ---
 
@@ -138,16 +138,16 @@ Per al videojoc **Puff Diddy**, hem triat una paleta de colors inspirada en l’
 
 **Imatge d'exemple de menú:**
 
-[![Muestra](Imagenes/Imagenmenu.png)
+![Muestra](Imagenes/Imagenmenu.png)
 
 
 **Fons pantalla d'inici:** 
 
-[![Muestra](Imagenes/Pantallainicio.png)
+![Muestra](Imagenes/Pantallainicio.png)
 
 **Fons pantalla del joc:** 
 
-[![Muestra](Imagenes/Fondo.png)
+![Muestra](Imagenes/Fondo.png)
 
 ---
 
@@ -163,23 +163,23 @@ A més, el seu disseny pixelat i geomètric encaixa perfectament amb la identita
 ### Wireframe
 En aquest apartat mostrem l’estructura i el disseny del videojoc.
 **Wireframe Pantalla inicial**
-[![Muestra](Imagenes/Wireframeinicial.png)
+![Muestra](Imagenes/Wireframeinicial.png)
 
 
 **Wireframe menú d'instruccions**
-[![Muestra](Imagenes/MenuInstruccion.png)
+![Muestra](Imagenes/MenuInstruccion.png)
 
 
 **Wireframe joc**
-[![Muestra](Imagenes/wireframejuego.png)
+![Muestra](Imagenes/wireframejuego.png)
 
 
 **Wireframe pantalla "Has perdut"**
-[![Muestra](Imagenes/fondoperdido.png)
+![Muestra](Imagenes/fondoperdido.png)
 
 
 **Wireframe pantalla "Victoria"**
-[![Muestra](Imagenes/Wireframevictoria.png)
+![Muestra](Imagenes/Wireframevictoria.png)
 
 ---
 
@@ -188,31 +188,31 @@ En aquest apartat hem afegit els **sprites corresponents al nostre joc Puff Didd
 
 **Sprite Jugador**
 
-[![Muestra](Imagenes/Spritejugador.png)
+![Muestra](Imagenes/Spritejugador.png)
 
 **Sprite enemics**
 
-[![Muestra](Imagenes/Enemigobase.png)
+![Muestra](Imagenes/Enemigobase.png)
 
 
-[![Muestra](Imagenes/enemigomedio.png)
+![Muestra](Imagenes/enemigomedio.png)
 
 
-[![Muestra](Imagenes/enemigodificil.png)
+![Muestra](Imagenes/enemigodificil.png)
 
 
 
 **Sprite projectil**
 
-[![Muestra](Imagenes/descarga.png)
+![Muestra](Imagenes/descarga.png)
 
 **Sprite efecte explosió mort enemic**
 
-[![Muestra](Imagenes/Explosion.png)
+![Muestra](Imagenes/Explosion.png)
 
 **Sprite projectil enemic**
 
-[![Muestra](Proyectil.png)
+![Muestra](Proyectil.png)
 
 
 
