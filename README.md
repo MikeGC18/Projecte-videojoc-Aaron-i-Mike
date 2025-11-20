@@ -206,11 +206,13 @@ En aquest apartat hem afegit els **sprites corresponents al nostre joc Puff Didd
 
 [![Muestra](Imagenes/descarga.png)
 
+**Sprite efecte explosió mort enemic**
+
+[![Muestra](Imagenes/descarga.png)
 
 
 
-
-### Diagfram
+### Diagrama de flux
 
 
 
