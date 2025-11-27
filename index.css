@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("Imagenes/fondodefinitivo.png");
+    background-size: 87% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    position: relative;
+}
+
+#Start {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3vw;
+    color: white;
+    text-decoration: none;
+    padding: 1.5vw 3vw;
+    border-radius: 1vw;
+
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+
+    text-shadow:
+        2px 2px 0 #000,
+        -2px 2px 0 #000,
+        2px -2px 0 #000,
+        -2px -2px 0 #000,
+        2px 0px 0 #000,
+        -2px 0px 0 #000,
+        0px 2px 0 #000,
+        0px -2px 0 #000;
+    animation: float 2s ease-in-out infinite;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(-50%, -50%) translateY(0px);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) translateY(-10px);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) translateY(0px);
+    }
+}
+
+@media (max-width: 600px) {
+    #Start {
+        font-size: 5vw;
+        padding: 3vw 6vw;
+        border-radius: 2vw;
+        top: 75%;
+    }
+
+    body {
+        background-size: 95% auto;
+    }
+}

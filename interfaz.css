@@ -1,0 +1,194 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url("Imagenes/fondo.gif");
+    background-size: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: 'Press Start 2P', cursive;
+}
+
+#puntuació {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 22px;
+    color: white;
+    z-index: 5;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px 2px 0 #000,
+        2px -2px 0 #000,
+        -2px -2px 0 #000;
+}
+
+#temps {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 22px;
+    color: white;
+    z-index: 5;
+
+    text-shadow:
+        2px 2px 0 #000,
+        -2px 2px 0 #000,
+        2px -2px 0 #000,
+        -2px -2px 0 #000;
+}
+
+#Instruccions {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    padding: 2rem;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 3px solid white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00ff00;
+
+    z-index: 10;
+    animation: floatMenu 3s ease-in-out infinite;
+}
+
+@keyframes floatMenu {
+    0% {
+        transform: translate(-50%, -50%) translateY(0px);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) translateY(-10px);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) translateY(0px);
+    }
+}
+
+#Instruccions h1 {
+    font-size: 26px;
+    color: #CCFF00;
+    text-align: center;
+    margin-bottom: 20px;
+
+    text-shadow:
+        2px 2px 0 #000,
+        -2px 2px 0 #000,
+        2px -2px 0 #000,
+        -2px -2px 0 #000,
+        2px 0px 0 #000,
+        -2px 0px 0 #000,
+        0px 2px 0 #000,
+        0px -2px 0 #000;
+}
+
+#Instruccions li {
+    font-size: 15px;
+    color: #bc13fe;
+    margin-bottom: 12px;
+    line-height: 1.5;
+
+    text-shadow:
+        2px 2px 0 #432678,
+        -2px 2px 0 #432678,
+        2px -2px 0 #432678,
+        -2px -2px 0 #432678,
+        2px 0px 0 #432678,
+        -2px 0px 0 #432678,
+        0px 2px 0 #432678,
+        0px -2px 0 #432678;
+}
+
+#Instruccions p {
+    font-size: 20px;
+    color: #bc13fe;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 2px 2px 0 #000;
+}
+
+#enemigosPrincipales {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+#enemigosPrincipales img {
+    width: 110px;
+    height: auto;
+}
+
+#PDiddy {
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: auto;
+    z-index: 2;
+}
+
+
+#OilBaby {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    width: 10px;
+    height: auto;
+    z-index: 5;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        background-size: 100% auto;
+    }
+
+    #Instruccions {
+        width: 85%;
+        padding: 1.6rem;
+    }
+
+    #enemigosPrincipales img {
+        width: 20vw;
+    }
+
+    #PDiddy {
+        width: 28vw;
+    }
+
+    #OilBaby {
+        width: 6.5vw;
+    }
+
+    #puntuació,
+    #temps {
+        font-size: 3.5vw;
+    }
+
+    #Instruccions li {
+        font-size: 3vw;
+    }
+
+    #Instruccions h1 {
+        font-size: 4.5vw;
+    }
+
+    #Instruccions p {
+        font-size: 3.5vw;
+    }
+}
