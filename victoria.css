@@ -1,0 +1,75 @@
+body{
+    background-image: url("./Imagenes/gifdiddy.gif");
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+
+    font-family: 'Press Start 2P', cursive;
+}
+#Win h1{
+    font-size: 50px;
+    color: #CCFF00;
+    text-align: center;
+    margin-top: 200px;
+    
+    margin-bottom: 20px;
+    
+
+    text-shadow:
+        2px 2px 0 #000,
+        -2px 2px 0 #000,
+        2px -2px 0 #000,
+        -2px -2px 0 #000,
+        2px 0px 0 #000,
+        -2px 0px 0 #000,
+        0px 2px 0 #000,
+        0px -2px 0 #000;
+
+}
+#Jugar a{
+    color: #CCFF00;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+        
+}
+#Jugar{
+    font-size: 50px;
+    color: #CCFF00;
+    text-align: center;
+    margin-top: 200PX;
+    margin-left: 230px;
+    
+    
+
+    text-shadow:
+        2px 2px 0 #000,
+        -2px 2px 0 #000,
+        2px -2px 0 #000,
+        -2px -2px 0 #000,
+        2px 0px 0 #000,
+        -2px 0px 0 #000,
+        0px 2px 0 #000,
+        0px -2px 0 #000;
+    animation: float 2s ease-in-out infinite;
+    
+
+   
+}
+@keyframes float {
+    0% {
+        transform: translate(-50%, -50%) translateY(0px);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) translateY(-10px);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) translateY(0px);
+    }
+}
