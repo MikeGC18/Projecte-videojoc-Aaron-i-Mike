@@ -8,21 +8,24 @@ body {
     background-repeat: no-repeat;
     background-color: black;
     position: relative;
+
+
 }
 
 #Start {
     font-family: 'Press Start 2P', cursive;
-    font-size: 3vw;
+    font-size: 40px;
     color: white;
     text-decoration: none;
-    padding: 1.5vw 3vw;
-    border-radius: 1vw;
+    padding: 15px 30px;
+    border-radius: 10px;
 
     position: absolute;
     left: 50%;
     top: 70%;
     transform: translate(-50%, -50%);
 
+    
     text-shadow:
         2px 2px 0 #000,
         -2px 2px 0 #000,
@@ -33,16 +36,12 @@ body {
         0px 2px 0 #000,
         0px -2px 0 #000;
     animation: float 2s ease-in-out infinite;
+
 }
 
 a:hover {
     color: yellow;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s ease;
+    
 }
 
 @keyframes float {
@@ -59,15 +58,43 @@ a {
     }
 }
 
-@media (max-width: 600px) {
-    #Start {
-        font-size: 5vw;
-        padding: 3vw 6vw;
-        border-radius: 2vw;
-        top: 75%;
-    }
+a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
 
-    body {
-        background-size: 95% auto;
-    }
+
+#introvideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 1000;
+}
+
+#Start {
+    visibility: hidden;
+    z-index: 0;
+}
+
+#skipButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+#skipButton:hover {
+    background: rgba(255, 255, 255, 0.2);
 }

@@ -4,23 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Intro con Skip y Música</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h2 id="Start"> <a href="/interfaz.html">Start</a></h2>
+    <video id="introvideo" src="Imagenes/Call of Duty_ World at War Intro.mp4" autoplay muted playsinline
+        preload="auto"></video>
 
-    <audio autoplay loop>
-        <source src="Musicainicial.mp3" type="audio/mpeg">
-    </audio>
-    <audio id="bgMusic" loop>
-        <source src="Musicainicial.mp3" type="audio/mpeg">
-    </audio>
+    <h2 id="Start"><a href="/interfaz.html">Start</a></h2>
 
+    <button id="skipButton">Skip</button>
+
+    <script>
+        const video = document.getElementById('introvideo');
+        const start = document.getElementById('Start');
+        const skipBtn = document.getElementById('skipButton');
+
+        // Ocultamos Start al principio
+        start.style.visibility = 'hidden';
+
+        // Creamos el audio de fondo
+        const bgMusic = new Audio('Musicainicial.mp3');
+        bgMusic.loop = true;
+
+        // Función para mostrar Start y opcionalmente reproducir música
+        function endIntro(playMusic) {
+            video.pause();
+            video.style.display = 'none';
+            start.style.visibility = 'visible';
+            skipBtn.style.display = 'none';
+            if (playMusic) {
+                bgMusic.play();
+            }
+        }
+
+        // Cuando el vídeo termina solo
+        video.addEventListener('ended', () => endIntro(false));
+
+        // Cuando el usuario hace clic en Skip
+        skipBtn.addEventListener('click', () => endIntro(true));
+    </script>
 </body>
 
 </html>
