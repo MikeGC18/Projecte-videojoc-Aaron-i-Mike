@@ -134,13 +134,13 @@ body {
 }
 
 #PDiddy {
-    position: absolute;
+    position: fixed;
     bottom: 4%;
     left: 50%;
     transform: translateX(-50%);
-    width: 200px;
-    height: auto;
-    z-index: 2;
+    width: 150px;
+    display: none;
+    z-index: 10;
 }
 
 
