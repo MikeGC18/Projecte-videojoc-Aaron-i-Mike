@@ -1,47 +1,52 @@
-
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 100vw;
     overflow: hidden;
-
-    background-image: url("Imagenes/fondo.gif");
-    background-size: 120%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
     font-family: 'Press Start 2P', cursive;
+    background-image: url("Imagenes/fondo.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+#game {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#PDiddy {
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    z-index: 10;
+}
+
+.fila-enemigos img {
+    position: absolute;
+    top: 20px;
+    z-index: 5;
+}
+
+#puntuació,
+#temps {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    z-index: 15;
+    text-shadow: 2px 2px 0 #000;
 }
 
 #puntuació {
-    position: absolute;
     top: 20px;
     left: 20px;
-    font-size: 22px;
-    color: white;
-    z-index: 5;
-    text-shadow:
-        2px 2px 0 #000,
-        -2px 2px 0 #000,
-        2px -2px 0 #000,
-        -2px -2px 0 #000;
 }
 
 #temps {
-    position: absolute;
     top: 20px;
     right: 20px;
-    font-size: 22px;
-    color: white;
-    z-index: 5;
-
-    text-shadow:
-        2px 2px 0 #000,
-        -2px 2px 0 #000,
-        2px -2px 0 #000,
-        -2px -2px 0 #000;
 }
 
 #Instruccions {
@@ -51,14 +56,34 @@ body {
     transform: translate(-50%, -50%);
     width: 40%;
     padding: 2rem;
-
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.85);
     border: 3px solid white;
     border-radius: 15px;
     box-shadow: 0 0 20px #00ff00;
-
-    z-index: 10;
+    z-index: 20;
     animation: floatMenu 3s ease-in-out infinite;
+}
+
+#Instruccions h1 {
+    font-size: 26px;
+    color: #CCFF00;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0 #000;
+}
+
+#Instruccions li {
+    font-size: 15px;
+    color: #bc13fe;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+#Instruccions p {
+    font-size: 20px;
+    color: #bc13fe;
+    text-align: center;
+    margin-top: 20px;
 }
 
 @keyframes floatMenu {
@@ -72,125 +97,6 @@ body {
 
     100% {
         transform: translate(-50%, -50%) translateY(0px);
-    }
-}
-
-#Instruccions h1 {
-    font-size: 26px;
-    color: #CCFF00;
-    text-align: center;
-    margin-bottom: 20px;
-
-    text-shadow:
-        2px 2px 0 #000,
-        -2px 2px 0 #000,
-        2px -2px 0 #000,
-        -2px -2px 0 #000,
-        2px 0px 0 #000,
-        -2px 0px 0 #000,
-        0px 2px 0 #000,
-        0px -2px 0 #000;
-}
-
-#Instruccions li {
-    font-size: 15px;
-    color: #bc13fe;
-    margin-bottom: 12px;
-    line-height: 1.5;
-
-    text-shadow:
-        2px 2px 0 #432678,
-        -2px 2px 0 #432678,
-        2px -2px 0 #432678,
-        -2px -2px 0 #432678,
-        2px 0px 0 #432678,
-        -2px 0px 0 #432678,
-        0px 2px 0 #432678,
-        0px -2px 0 #432678;
-}
-
-#Instruccions p {
-    font-size: 20px;
-    color: #bc13fe;
-    text-align: center;
-    margin-top: 20px;
-    text-shadow: 2px 2px 0 #000;
-}
-
-#enemigosPrincipales {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    position: absolute;
-    top: 12%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-#enemigosPrincipales img {
-    width: 110px;
-    height: auto;
-}
-
-#PDiddy {
-    position: fixed;
-    bottom: 4%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 150px;
-    display: none;
-    z-index: 10;
-}
-
-
-#OilBaby {
-    position: absolute;
-    top: 18%;
-    left: 50%;
-    width: 10px;
-    height: auto;
-    z-index: 5;
-}
-
-
-@media (max-width: 600px) {
-    body {
-        background-size: 100% auto;
-    }
-
-    #Instruccions {
-        width: 85%;
-        padding: 1.6rem;
-    }
-
-    #enemigosPrincipales img {
-        width: 20vw;
-    }
-
-    #PDiddy {
-        width: 28vw;
-    }
-
-    #OilBaby {
-        width: 6.5vw;
-    }
-
-    #puntuació,
-    #temps {
-        font-size: 3.5vw;
-    }
-
-    #Instruccions li {
-        font-size: 3vw;
-    }
-
-    #Instruccions h1 {
-        font-size: 4.5vw;
-    }
-
-    #Instruccions p {
-        font-size: 3.5vw;
     }
 }
 
