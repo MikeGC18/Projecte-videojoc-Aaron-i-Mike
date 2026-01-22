@@ -44,9 +44,9 @@ const sonidoExplosion = new Audio("Roblox_Death_Sound_(Oof)_-_Sound_Effect_(HD)_
 sonidoExplosion.volume = 0.5;
 
 const tiposEnemigos = [
-    { tipo: 'basico', src: 'Imagenes/Justin Bierber_preview_rev_1 (1).png', ancho: 80, vida: 1 },
-    { tipo: 'medio', src: 'Imagenes/Beyonce1 (1).png', ancho: 100, vida: 2 },
-    { tipo: 'dificil', src: 'Imagenes/Mogshoot2 (1).png', ancho: 120, vida: 5 }
+    { tipo: 'basico', src: 'Imagenes/Justin Bierber_preview_rev_1 (1).png', ancho: 80, vida: 2 },
+    { tipo: 'medio', src: 'Imagenes/Beyonce1 (1).png', ancho: 100, vida: 4 },
+    { tipo: 'dificil', src: 'Imagenes/Mogshoot2 (1).png', ancho: 120, vida: 6 }
 ];
 
 /************************************************
@@ -302,6 +302,7 @@ function gameLoop() {
 
     // Balas jugador
     for (let i = balas.length - 1; i >= 0; i--) {
+        
         let b = balas[i]; b.y += b.dy; ctx.drawImage(b.img, b.x, b.y, b.width, b.height); let golpeado = false;
         if (miniBoss && (b.x < miniBoss.x + miniBoss.width && b.x + b.width > miniBoss.x && b.y < miniBoss.y + miniBoss.height && b.y + b.height > miniBoss.y)) {
             miniBoss.vida--; miniBoss.hit = 10; balas.splice(i, 1); puntuacion += 10; actualizarPuntuacion(); golpeado = true;
@@ -318,7 +319,7 @@ function gameLoop() {
     // Gotas enemigos
     for (let i = gotas.length - 1; i >= 0; i--) {
         let g = gotas[i]; g.y += g.dy; g.x += g.dx || 0; ctx.drawImage(g.img, g.x, g.y, g.width, g.height);
-        if (g.x < pDiddy.x + pDiddy.width && g.x + g.width > pDiddy.x && g.y < pDiddy.y + pDiddy.height && g.y + g.height > pDiddy.y) { gotas.splice(i, 1); puntuacion = Math.max(0, puntuacion - 5); actualizarPuntuacion(); }
+        if (g.x < pDiddy.x + pDiddy.width && g.x + g.width > pDiddy.x && g.y < pDiddy.y + pDiddy.height && g.y + g.height > pDiddy.y) { gotas.splice(i, 1); puntuacion = Math.max(0, puntuacion - 5); actualizarPuntuacion(); sacudirPuntuacion(); }
         if (g.y > canvas.height) gotas.splice(i, 1);
     }
 
@@ -341,6 +342,14 @@ function gameLoop() {
  * PUNTUACIÓN
  ************************************************/
 function actualizarPuntuacion() { const p = document.getElementById('puntuació'); if (p) p.textContent = `Pts: ${puntuacion}`; }
+function sacudirPuntuacion() {
+    const p = document.getElementById('puntuació');
+    if (!p) return;
+
+    p.classList.remove('shake'); // resetea la animación si estaba activa
+    void p.offsetWidth;          // fuerza reflow para que la animación se reinicie
+    p.classList.add('shake');    // aplica la animación
+}
 
 /************************************************
  * INICIO
