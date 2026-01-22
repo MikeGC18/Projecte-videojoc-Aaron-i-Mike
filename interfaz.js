@@ -43,6 +43,10 @@ imgExplosion.src = "Imagenes/explosion.png";
 const sonidoExplosion = new Audio("Roblox_Death_Sound_(Oof)_-_Sound_Effect_(HD)_128k.ogg");
 sonidoExplosion.volume = 0.5;
 
+const sonidoGolpe = new Audio("GOLPEHITSOUNDEFFECTSEFECTOSDESONIDO.mp3"); 
+sonidoGolpe.volume = 0.5;
+
+
 const tiposEnemigos = [
     { tipo: 'basico', src: 'Imagenes/Justin Bierber_preview_rev_1 (1).png', ancho: 80, vida: 2 },
     { tipo: 'medio', src: 'Imagenes/Beyonce1 (1).png', ancho: 100, vida: 4 },
@@ -305,13 +309,13 @@ function gameLoop() {
         
         let b = balas[i]; b.y += b.dy; ctx.drawImage(b.img, b.x, b.y, b.width, b.height); let golpeado = false;
         if (miniBoss && (b.x < miniBoss.x + miniBoss.width && b.x + b.width > miniBoss.x && b.y < miniBoss.y + miniBoss.height && b.y + b.height > miniBoss.y)) {
-            miniBoss.vida--; miniBoss.hit = 10; balas.splice(i, 1); puntuacion += 10; actualizarPuntuacion(); golpeado = true;
-            if (miniBoss.vida <= 0) { crearExplosion(miniBoss.x, miniBoss.y, miniBoss.width, miniBoss.height); miniBoss = null; setTimeout(generarFilaNormal, 1000); }
+            miniBoss.vida--; miniBoss.hit = 10;sonidoGolpe.currentTime=0;sonidoGolpe.play(); balas.splice(i, 1); puntuacion += 10; actualizarPuntuacion(); golpeado = true;
+            if (miniBoss.vida <= 0) { sonidoExplosion.currentTime=0; sonidoExplosion.play();crearExplosion(miniBoss.x, miniBoss.y, miniBoss.width, miniBoss.height); miniBoss = null; setTimeout(generarFilaNormal, 1000); }
         } else if (nuevoMiniBoss && (b.x < nuevoMiniBoss.x + nuevoMiniBoss.width && b.x + b.width > nuevoMiniBoss.x && b.y < nuevoMiniBoss.y + nuevoMiniBoss.height && b.y + b.height > nuevoMiniBoss.y)) {
-            nuevoMiniBoss.vida--; nuevoMiniBoss.hit = 10; balas.splice(i, 1); puntuacion += 10; actualizarPuntuacion(); golpeado = true;
-            if (nuevoMiniBoss.vida <= 0) { crearExplosion(nuevoMiniBoss.x, nuevoMiniBoss.y, nuevoMiniBoss.width, nuevoMiniBoss.height); nuevoMiniBoss = null; setTimeout(generarFilaNormal, 1000); }
+            nuevoMiniBoss.vida--; nuevoMiniBoss.hit = 10;sonidoGolpe.currentTime=0;sonidoGolpe.play(); balas.splice(i, 1); puntuacion += 10; actualizarPuntuacion(); golpeado = true;
+            if (nuevoMiniBoss.vida <= 0) {sonidoExplosion.currentTime=0; sonidoExplosion.play(); crearExplosion(nuevoMiniBoss.x, nuevoMiniBoss.y, nuevoMiniBoss.width, nuevoMiniBoss.height); nuevoMiniBoss = null; setTimeout(generarFilaNormal, 1000); }
         } else {
-            for (let j = enemigos.length - 1; j >= 0; j--) { let e = enemigos[j]; if (b.x < e.x + e.width && b.x + b.width > e.x && b.y < e.y + e.height && b.y + b.height > e.y) { e.vida--; e.hit = 10; balas.splice(i, 1); puntuacion += 10; actualizarPuntuacion(); if (e.vida <= 0) { crearExplosion(e.x, e.y, e.width, e.height); enemigos.splice(j, 1); } golpeado = true; break; } }
+            for (let j = enemigos.length - 1; j >= 0; j--) { let e = enemigos[j]; if (b.x < e.x + e.width && b.x + b.width > e.x && b.y < e.y + e.height && b.y + b.height > e.y) { e.vida--; e.hit = 10; sonidoGolpe.currentTime=0; sonidoGolpe.play(); balas.splice(i, 1); puntuacion += 10; actualizarPuntuacion(); if (e.vida <= 0) { crearExplosion(e.x, e.y, e.width, e.height); enemigos.splice(j, 1); } golpeado = true; break; } }
         }
         if (!golpeado && b.y < 0) balas.splice(i, 1);
     }
@@ -346,9 +350,9 @@ function sacudirPuntuacion() {
     const p = document.getElementById('puntuació');
     if (!p) return;
 
-    p.classList.remove('shake'); // resetea la animación si estaba activa
-    void p.offsetWidth;          // fuerza reflow para que la animación se reinicie
-    p.classList.add('shake');    // aplica la animación
+    p.classList.remove('shake'); 
+    void p.offsetWidth;         
+    p.classList.add('shake');    
 }
 
 /************************************************
