@@ -31,7 +31,7 @@ const imgGota = new Image();
 imgGota.src = "Imagenes/Proyectil.png";
 
 const imgExplosion = new Image();
-imgExplosion.src = "Imagenes/explosion.png";
+imgExplosion.src = "Imagenes/Explosion.png";
 
 // SONIDOS
 const sonidoExplosion = new Audio("Efectos/Roblox_Death_Sound_(Oof)_-_Sound_Effect_(HD)_128k.ogg");
