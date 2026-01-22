@@ -164,7 +164,7 @@ function finalizarJuego() {
     juegoIniciado = false;
     musicaFondo.pause();
     clearInterval(temporizador);
-    if (puntuacion >= 350) window.location.href = "victoria.html";
+    if (puntuacion >= 600) window.location.href = "victoria.html";
     else window.location.href = "hasPerdido.html";
 }
 
