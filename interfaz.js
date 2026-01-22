@@ -61,7 +61,8 @@ const pDiddy = {
     y: canvas.height - 180,
     width: 250,
     height: 180,
-    puedeDisparar: true
+    puedeDisparar: true,
+    hit:0
 };
 
 /************************************************
@@ -286,11 +287,31 @@ function gameLoop() {
     // Mover jugador
     if (keys['a'] && pDiddy.x > 0) pDiddy.x -= 5;
     if (keys['d'] && pDiddy.x + pDiddy.width < canvas.width) pDiddy.x += 5;
+    if (pDiddy.hit > 0) {
+    ctx.save();
+    ctx.filter = "brightness(6) contrast(0)";
     ctx.drawImage(imgJugador, pDiddy.x, pDiddy.y, pDiddy.width, pDiddy.height);
+    ctx.restore();
+
+    pDiddy.hit--;
+} else {
+    ctx.drawImage(imgJugador, pDiddy.x, pDiddy.y, pDiddy.width, pDiddy.height);
+}
+
 
     // Dibujar enemigos
-    function dibujar(e) { if (e.hit > 0) { if (Math.floor(e.hit / 5) % 2 === 0) { let rojo = Math.floor((e.vida / e.maxVida) * 255); ctx.fillStyle = `rgb(${rojo},0,0)`; ctx.fillRect(e.x, e.y, e.width, e.height); } e.hit--; } ctx.drawImage(e.img, e.x, e.y, e.width, e.height); }
+function dibujar(e) {
+    ctx.save();
 
+    if (e.hit > 0) {
+        // Aplicar filtro rojo
+        ctx.filter = "sepia(1) saturate(5) hue-rotate(-50deg)";
+        e.hit--;
+    }
+
+    ctx.drawImage(e.img, e.x, e.y, e.width, e.height);
+    ctx.restore();
+}
     // Mini Boss
     if (miniBoss) { miniBoss.x += direccion * velocidad; if (miniBoss.x <= 0 || miniBoss.x + miniBoss.width >= canvas.width) direccion *= -1; dibujar(miniBoss); }
     else if (nuevoMiniBoss) {
@@ -323,7 +344,8 @@ function gameLoop() {
     // Gotas enemigos
     for (let i = gotas.length - 1; i >= 0; i--) {
         let g = gotas[i]; g.y += g.dy; g.x += g.dx || 0; ctx.drawImage(g.img, g.x, g.y, g.width, g.height);
-        if (g.x < pDiddy.x + pDiddy.width && g.x + g.width > pDiddy.x && g.y < pDiddy.y + pDiddy.height && g.y + g.height > pDiddy.y) { gotas.splice(i, 1); puntuacion = Math.max(0, puntuacion - 5); actualizarPuntuacion(); sacudirPuntuacion(); }
+        if (g.x < pDiddy.x + pDiddy.width && g.x + g.width > pDiddy.x && g.y < pDiddy.y + pDiddy.height && g.y + g.height > pDiddy.y) { gotas.splice(i, 1); puntuacion = Math.max(0, puntuacion - 5); actualizarPuntuacion(); sacudirPuntuacion(); pDiddy.hit = 15;
+}
         if (g.y > canvas.height) gotas.splice(i, 1);
     }
 
