@@ -11,41 +11,11 @@
 
 <body>
     <video id="introvideo" src="Imagenes/Call of Duty_ World at War Intro.mp4" autoplay muted playsinline
-        preload="auto"></video>
-
+        preload="auto">
+    </video>
     <h2 id="Start"><a href="interfaz.html">Start</a></h2>
-
     <button id="skipButton">Skip</button>
-
-    <script>
-        const video = document.getElementById('introvideo');
-        const start = document.getElementById('Start');
-        const skipBtn = document.getElementById('skipButton');
-
-        // Ocultamos Start al principio
-        start.style.visibility = 'hidden';
-
-        // Creamos el audio de fondo
-        const bgMusic = new Audio('Musicainicial.mp3');
-        bgMusic.loop = true;
-
-        // Función para mostrar Start y opcionalmente reproducir música
-        function endIntro(playMusic) {
-            video.pause();
-            video.style.display = 'none';
-            start.style.visibility = 'visible';
-            skipBtn.style.display = 'none';
-            if (playMusic) {
-                bgMusic.play();
-            }
-        }
-
-        // Cuando el vídeo termina solo
-        video.addEventListener('ended', () => endIntro(false));
-
-        // Cuando el usuario hace clic en Skip
-        skipBtn.addEventListener('click', () => endIntro(true));
-    </script>
+    <script src="index.js"></script>
 </body>
 
 </html>
